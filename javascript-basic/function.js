@@ -1,8 +1,8 @@
-function greet() {
-  console.log("Hello World!");
-}
+// function greet() {
+//   console.log("Hello World!");
+// }
 
-greet();
+// greet();
 
 // function dengan parameter
 function add(a, b) {
