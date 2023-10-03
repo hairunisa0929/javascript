@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <h2>Demo JavaScript in Body</h2>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
 
-<h2>My First Web Page</h2>
-<p>My first paragraph.</p>
-<p>Never call document.write after the document has finished loading. It will overwrite the whole document.</p>
-<script>
-console.log(5 + 6);
-</script>
+    <!-- Internal -->
+    <script>
+      function myFunction() {
+        window.alert("Hello World");
+      }
+    </script>
 
-</body>
+    <!-- External -->
+    <!-- <script src="external.js"></script> -->
+  </body>
 </html>
