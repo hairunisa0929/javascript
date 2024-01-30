@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h2 id="title"></h2>
+    <h1 id="title">Belajar Get</h1>
 
-    <p class="description">Belajar method get element by class</p>
-    <span>Hello World</span>
+    <div class="description"></div>
+    <div class="description"></div>
+    <div class="description"></div>
+
+    <ul>
+      <li>Apple</li>
+      <li>Mango</li>
+    </ul>
 
     <script>
-      document.getElementById("title").innerHTML = "Javascript HTML DOM";
+      let title = document.getElementById("title");
       // console.log(title);
-      // let desc = document.getElementsByClassName("description");
-      // console.log(desc);
-      let text = document.getElementsByTagName("span");
-      console.log(text);
+
+      let description = document.getElementsByClassName("description");
+      // console.log(description);
+
+      let list = document.getElementsByTagName("li");
+      console.log(list);
     </script>
   </body>
 </html>

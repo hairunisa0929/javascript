@@ -6,21 +6,23 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 id="title"></h1>
+    <h1 id="title">Belajar Query Selector</h1>
     <span class="text">Hello World</span>
     <p>Belajar query selector</p>
 
     <script>
-      document.querySelector("#title").innerHTML = "Query Selector";
       let title = document.querySelector("#title");
+      console.log(title);
+
       let text = document.querySelector(".text");
+      console.log(text);
+
       let desc = document.querySelector("p");
-      // console.log(title);
-      // console.log(text);
-      // console.log(desc);
+      console.log(desc);
 
       // mengubah style
       // document.querySelector("p").style.fontWeight = 'bold';
+      
     </script>
   </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Element</title>
+</head>
+<body>
+    <h1 id="title">Title</h1>
+    <div class="description"></div>
+    <div class="description">ini description 2</div>
+    
+    <h2>Fruit List</h2>
+    <ul id="fruitList">
+        <li>Apple</li>
+    </ul>
+
+    <script>
+        document.getElementById("title").textContent = "Manipulating HTML Element";
+         document.getElementsByClassName("description")[0].innerHTML = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG23nGg2_a8b1c-DejPxyjL65FsmBcfjabMg&usqp=CAU">';
+
+        // parent element
+        const fruitList = document.getElementById("fruitList");
+
+        // membuat element baru
+        // let newListItem = document.createElement("li");
+        // newListItem.textContent = "Mango";
+
+        // fruitList.appendChild(newListItem);
+
+        const fruits = ["Banana", "Orange", "Lemon"];
+
+        for (let fruit of fruits) {
+            let newListItem = document.createElement("li");
+            newListItem.textContent = fruit;
+            fruitList.appendChild(newListItem);
+        }
+
+        // document.getElementsByClassName("description")[0].innerHTML = "description 1";
+       
+
+        // document.getElementsByTagName("li")[0].innerHTML = "list 1";
+        // document.getElementsByTagName("li")[1].innerHTML = "list 2";
+
+      </script>
+</body>
+</html>
