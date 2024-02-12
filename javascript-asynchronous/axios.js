@@ -16,15 +16,19 @@
 // without try catch
 // const getAllPosts = async () => {
 //   const response = await axios.get("https://dummyjson.com/posts");
-//   console.log(response);
+//   console.log(response.data.posts);
 // };
+
+// async function getPosts () {
+
+// }
 
 // getAllPosts();
 
-// with try catch
+// // with try catch
 const getAllPosts = async () => {
   try {
-    const response = await axios.get("https://dummyjson.com/posts");
+    const response = await axios.get("https://dummyjson.com/ps");
     console.log(response);
   } catch (error) {
     console.log(error);

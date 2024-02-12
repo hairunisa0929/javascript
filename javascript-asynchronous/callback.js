@@ -1,10 +1,26 @@
-function showSum(sum) {
-  console.log(`the sum result is ${sum}`);
+function walkDog(callback) {
+  setTimeout(() => {
+    console.log("You walk the dog");
+    callback();
+  }, 1500);
 }
 
-function addition(num1, num2, callbackFunc) {
-  let sum = num1 + num2;
-  callbackFunc(sum);
+function cleanKitchen(callback) {
+  setTimeout(() => {
+    console.log("You clean the kitchen");
+    callback();
+  }, 2500);
 }
 
-addition(2, 3, showSum);
+function takeOutTrash(callback) {
+  setTimeout(() => {
+    console.log("You take out the trash");
+    callback();
+  }, 500);
+}
+
+walkDog(() => {
+  cleanKitchen(() => {
+    takeOutTrash(() => console.log("You finished all the chores"));
+  });
+});
